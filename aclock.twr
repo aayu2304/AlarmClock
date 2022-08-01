@@ -1,0 +1,675 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml aclock.twx aclock.ncd -o aclock.twr aclock.pcf
+
+Design file:              aclock.ncd
+Physical constraint file: aclock.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock H_in0<0> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+H_out0<0>   |         8.861(F)|      SLOW  |         4.189(F)|      FAST  |reset_H_in1[1]_AND_43_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock H_in0<1> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+H_out0<1>   |        10.087(F)|      SLOW  |         4.911(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        11.198(F)|      SLOW  |         5.463(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.133(F)|      SLOW  |         5.059(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        11.058(F)|      SLOW  |         5.377(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+            |        10.944(F)|      SLOW  |         5.335(F)|      FAST  |reset_H_in1[1]_AND_41_o|   0.000|
+H_out0<2>   |         9.835(F)|      SLOW  |         4.664(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        11.143(F)|      SLOW  |         5.373(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.074(F)|      SLOW  |         4.951(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        10.985(F)|      SLOW  |         5.239(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+            |        10.859(F)|      SLOW  |         5.198(F)|      FAST  |reset_H_in1[1]_AND_41_o|   0.000|
+H_out0<3>   |        10.329(F)|      SLOW  |         5.025(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        11.461(F)|      SLOW  |         5.606(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.415(F)|      SLOW  |         5.219(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        11.335(F)|      SLOW  |         5.528(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+            |        11.126(F)|      SLOW  |         5.427(F)|      FAST  |reset_H_in1[1]_AND_41_o|   0.000|
+H_out1<0>   |         9.887(F)|      SLOW  |         4.794(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        11.075(F)|      SLOW  |         5.379(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.225(F)|      SLOW  |         5.138(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        11.117(F)|      SLOW  |         5.403(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+            |        11.071(F)|      SLOW  |         5.385(F)|      FAST  |reset_H_in1[1]_AND_41_o|   0.000|
+H_out1<1>   |         9.676(F)|      SLOW  |         4.715(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.647(F)|      SLOW  |         5.166(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.027(F)|      SLOW  |         5.037(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        10.945(F)|      SLOW  |         5.340(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock H_in0<2> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+H_out0<1>   |        10.053(F)|      SLOW  |         4.922(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.798(F)|      SLOW  |         5.309(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        10.717(F)|      SLOW  |         5.153(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        10.502(F)|      SLOW  |         5.104(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+H_out0<2>   |         9.801(F)|      SLOW  |         4.675(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.743(F)|      SLOW  |         5.219(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        10.658(F)|      SLOW  |         5.045(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        10.429(F)|      SLOW  |         4.966(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+H_out0<3>   |        10.295(F)|      SLOW  |         5.036(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        11.061(F)|      SLOW  |         5.452(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        10.999(F)|      SLOW  |         5.313(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        10.779(F)|      SLOW  |         5.255(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+H_out1<0>   |         9.853(F)|      SLOW  |         4.805(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.675(F)|      SLOW  |         5.225(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        10.809(F)|      SLOW  |         5.232(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        10.561(F)|      SLOW  |         5.130(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+H_out1<1>   |         9.642(F)|      SLOW  |         4.726(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.247(F)|      SLOW  |         5.012(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        10.611(F)|      SLOW  |         5.131(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        10.389(F)|      SLOW  |         5.067(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock H_in0<3> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+H_out0<1>   |        10.197(F)|      SLOW  |         4.963(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.691(F)|      SLOW  |         5.234(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.034(F)|      SLOW  |         5.345(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+H_out0<2>   |         9.945(F)|      SLOW  |         4.716(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.636(F)|      SLOW  |         5.144(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        10.975(F)|      SLOW  |         5.237(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+H_out0<3>   |        10.439(F)|      SLOW  |         5.077(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.954(F)|      SLOW  |         5.377(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.316(F)|      SLOW  |         5.505(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+H_out1<0>   |         9.997(F)|      SLOW  |         4.846(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.568(F)|      SLOW  |         5.150(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.126(F)|      SLOW  |         5.424(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+H_out1<1>   |         9.786(F)|      SLOW  |         4.767(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.140(F)|      SLOW  |         4.937(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        10.928(F)|      SLOW  |         5.323(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock H_in1<0> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+H_out0<1>   |        10.464(F)|      SLOW  |         5.139(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.177(F)|      SLOW  |         4.956(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.139(F)|      SLOW  |         5.114(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        10.118(F)|      SLOW  |         4.851(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+            |        10.150(F)|      SLOW  |         4.889(F)|      FAST  |reset_H_in1[1]_AND_41_o|   0.000|
+H_out0<2>   |        10.212(F)|      SLOW  |         4.892(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.122(F)|      SLOW  |         4.866(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.080(F)|      SLOW  |         5.006(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        10.045(F)|      SLOW  |         4.713(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+            |        10.065(F)|      SLOW  |         4.752(F)|      FAST  |reset_H_in1[1]_AND_41_o|   0.000|
+H_out0<3>   |        10.706(F)|      SLOW  |         5.253(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.440(F)|      SLOW  |         5.099(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.421(F)|      SLOW  |         5.274(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        10.395(F)|      SLOW  |         5.002(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+            |        10.332(F)|      SLOW  |         4.981(F)|      FAST  |reset_H_in1[1]_AND_41_o|   0.000|
+H_out1<0>   |        10.264(F)|      SLOW  |         5.022(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.054(F)|      SLOW  |         4.872(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.231(F)|      SLOW  |         5.193(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        10.177(F)|      SLOW  |         4.877(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+            |        10.277(F)|      SLOW  |         4.939(F)|      FAST  |reset_H_in1[1]_AND_41_o|   0.000|
+H_out1<1>   |        10.053(F)|      SLOW  |         4.943(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |         9.626(F)|      SLOW  |         4.659(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.033(F)|      SLOW  |         5.092(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        10.005(F)|      SLOW  |         4.814(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock H_in1<1> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+H_out0<1>   |        10.322(F)|      SLOW  |         5.059(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.559(F)|      SLOW  |         5.205(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        10.937(F)|      SLOW  |         5.388(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        11.209(F)|      SLOW  |         5.482(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+H_out0<2>   |        10.070(F)|      SLOW  |         4.812(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.504(F)|      SLOW  |         5.115(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        10.878(F)|      SLOW  |         5.280(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        11.136(F)|      SLOW  |         5.344(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+H_out0<3>   |        10.564(F)|      SLOW  |         5.173(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.822(F)|      SLOW  |         5.348(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.219(F)|      SLOW  |         5.548(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        11.486(F)|      SLOW  |         5.633(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+H_out1<0>   |        10.122(F)|      SLOW  |         4.942(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.436(F)|      SLOW  |         5.121(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.029(F)|      SLOW  |         5.467(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        11.268(F)|      SLOW  |         5.508(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+H_out1<1>   |         9.911(F)|      SLOW  |         4.863(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.008(F)|      SLOW  |         4.908(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        10.831(F)|      SLOW  |         5.366(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        11.096(F)|      SLOW  |         5.445(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock M_in0<0> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+M_out0<0>   |         8.627(F)|      SLOW  |         4.176(F)|      FAST  |reset_M_in1[3]_AND_55_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock M_in0<1> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+M_out0<1>   |         9.908(F)|      SLOW  |         4.645(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.998(F)|      SLOW  |         4.630(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.245(F)|      SLOW  |         4.473(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |         9.456(F)|      SLOW  |         4.445(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+            |         9.199(F)|      SLOW  |         4.368(F)|      FAST  |reset_M_in1[3]_AND_53_o|   0.000|
+M_out0<2>   |        10.001(F)|      SLOW  |         4.696(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.868(F)|      SLOW  |         4.593(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |         9.830(F)|      SLOW  |         4.293(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |         9.335(F)|      SLOW  |         4.454(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+            |         9.274(F)|      SLOW  |         4.418(F)|      FAST  |reset_M_in1[3]_AND_53_o|   0.000|
+M_out0<3>   |        11.955(F)|      SLOW  |         4.741(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        11.555(F)|      SLOW  |         4.839(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        11.703(F)|      SLOW  |         4.608(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |        10.929(F)|      SLOW  |         4.420(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+            |        10.967(F)|      SLOW  |         4.600(F)|      FAST  |reset_M_in1[3]_AND_53_o|   0.000|
+M_out1<0>   |        10.181(F)|      SLOW  |         4.829(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.048(F)|      SLOW  |         4.717(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.352(F)|      SLOW  |         4.576(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |         9.600(F)|      SLOW  |         4.611(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+            |         9.584(F)|      SLOW  |         4.619(F)|      FAST  |reset_M_in1[3]_AND_53_o|   0.000|
+M_out1<1>   |        10.046(F)|      SLOW  |         4.707(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.017(F)|      SLOW  |         4.160(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |         9.912(F)|      SLOW  |         4.318(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |         9.467(F)|      SLOW  |         4.483(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+M_out1<2>   |         9.524(F)|      SLOW  |         4.516(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.771(F)|      SLOW  |         4.559(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.348(F)|      SLOW  |         4.588(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock M_in0<2> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+M_out0<1>   |         9.898(F)|      SLOW  |         4.668(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.988(F)|      SLOW  |         4.653(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.566(F)|      SLOW  |         4.721(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |         9.196(F)|      SLOW  |         4.207(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+M_out0<2>   |         9.991(F)|      SLOW  |         4.719(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.858(F)|      SLOW  |         4.616(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.151(F)|      SLOW  |         4.541(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |         9.075(F)|      SLOW  |         4.216(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+M_out0<3>   |        11.945(F)|      SLOW  |         4.764(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        11.545(F)|      SLOW  |         4.862(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        12.024(F)|      SLOW  |         4.856(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |        10.669(F)|      SLOW  |         4.182(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+M_out1<0>   |        10.171(F)|      SLOW  |         4.852(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.038(F)|      SLOW  |         4.740(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.673(F)|      SLOW  |         4.824(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |         9.340(F)|      SLOW  |         4.373(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+M_out1<1>   |        10.036(F)|      SLOW  |         4.730(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.007(F)|      SLOW  |         4.183(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.233(F)|      SLOW  |         4.566(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |         9.207(F)|      SLOW  |         4.245(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+M_out1<2>   |         9.514(F)|      SLOW  |         4.539(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.761(F)|      SLOW  |         4.582(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.669(F)|      SLOW  |         4.836(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock M_in0<3> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+M_out0<1>   |         9.583(F)|      SLOW  |         4.515(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.673(F)|      SLOW  |         4.500(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.319(F)|      SLOW  |         4.858(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+M_out0<2>   |         9.676(F)|      SLOW  |         4.566(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.543(F)|      SLOW  |         4.463(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |         9.904(F)|      SLOW  |         4.678(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+M_out0<3>   |        11.630(F)|      SLOW  |         4.611(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        11.230(F)|      SLOW  |         4.709(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        11.777(F)|      SLOW  |         4.993(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+M_out1<0>   |         9.856(F)|      SLOW  |         4.699(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.723(F)|      SLOW  |         4.587(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.426(F)|      SLOW  |         4.961(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+M_out1<1>   |         9.721(F)|      SLOW  |         4.577(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         8.692(F)|      SLOW  |         4.030(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |         9.986(F)|      SLOW  |         4.703(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+M_out1<2>   |         9.199(F)|      SLOW  |         4.386(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.446(F)|      SLOW  |         4.429(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.422(F)|      SLOW  |         4.973(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock M_in1<0> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+M_out0<1>   |        10.838(F)|      SLOW  |         4.537(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.928(F)|      SLOW  |         4.702(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        11.353(F)|      SLOW  |         5.074(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |         9.843(F)|      SLOW  |         4.590(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+            |         9.670(F)|      SLOW  |         4.561(F)|      FAST  |reset_M_in1[3]_AND_53_o|   0.000|
+M_out0<2>   |        10.931(F)|      SLOW  |         4.588(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.798(F)|      SLOW  |         4.665(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.938(F)|      SLOW  |         4.894(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |         9.722(F)|      SLOW  |         4.599(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+            |         9.745(F)|      SLOW  |         4.611(F)|      FAST  |reset_M_in1[3]_AND_53_o|   0.000|
+M_out0<3>   |        12.885(F)|      SLOW  |         4.633(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        12.485(F)|      SLOW  |         4.911(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        12.811(F)|      SLOW  |         5.209(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |        11.316(F)|      SLOW  |         4.565(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+            |        11.438(F)|      SLOW  |         4.793(F)|      FAST  |reset_M_in1[3]_AND_53_o|   0.000|
+M_out1<0>   |        11.111(F)|      SLOW  |         4.721(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.978(F)|      SLOW  |         4.789(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        11.460(F)|      SLOW  |         5.177(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |         9.987(F)|      SLOW  |         4.756(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+            |        10.055(F)|      SLOW  |         4.812(F)|      FAST  |reset_M_in1[3]_AND_53_o|   0.000|
+M_out1<1>   |        10.976(F)|      SLOW  |         4.599(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.947(F)|      SLOW  |         4.232(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        11.020(F)|      SLOW  |         4.919(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |         9.854(F)|      SLOW  |         4.628(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+M_out1<2>   |        10.454(F)|      SLOW  |         4.408(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.701(F)|      SLOW  |         4.631(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        11.456(F)|      SLOW  |         5.189(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock M_in1<1> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+M_out0<1>   |        10.351(F)|      SLOW  |         4.575(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.898(F)|      SLOW  |         4.784(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.641(F)|      SLOW  |         5.022(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |        10.039(F)|      SLOW  |         4.686(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+M_out0<2>   |        10.444(F)|      SLOW  |         4.626(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.768(F)|      SLOW  |         4.747(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.226(F)|      SLOW  |         4.842(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |         9.918(F)|      SLOW  |         4.695(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+M_out0<3>   |        12.398(F)|      SLOW  |         4.671(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        12.455(F)|      SLOW  |         4.993(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        12.099(F)|      SLOW  |         5.157(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |        11.512(F)|      SLOW  |         4.661(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+M_out1<0>   |        10.624(F)|      SLOW  |         4.759(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.948(F)|      SLOW  |         4.871(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.748(F)|      SLOW  |         5.125(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |        10.183(F)|      SLOW  |         4.852(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+M_out1<1>   |        10.489(F)|      SLOW  |         4.637(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.917(F)|      SLOW  |         4.314(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.308(F)|      SLOW  |         4.867(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |        10.050(F)|      SLOW  |         4.724(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+M_out1<2>   |         9.967(F)|      SLOW  |         4.446(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.671(F)|      SLOW  |         4.713(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.744(F)|      SLOW  |         5.137(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock M_in1<2> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+M_out0<1>   |        10.676(F)|      SLOW  |         4.499(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.766(F)|      SLOW  |         4.787(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        11.191(F)|      SLOW  |         5.239(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+M_out0<2>   |        10.769(F)|      SLOW  |         4.550(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.636(F)|      SLOW  |         4.750(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.776(F)|      SLOW  |         5.059(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+M_out0<3>   |        12.723(F)|      SLOW  |         4.595(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        12.323(F)|      SLOW  |         4.996(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        12.649(F)|      SLOW  |         5.374(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+M_out1<0>   |        10.949(F)|      SLOW  |         4.683(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.816(F)|      SLOW  |         4.874(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        11.298(F)|      SLOW  |         5.342(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+M_out1<1>   |        10.814(F)|      SLOW  |         4.561(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.785(F)|      SLOW  |         4.317(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.858(F)|      SLOW  |         5.084(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+M_out1<2>   |        10.292(F)|      SLOW  |         4.370(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.539(F)|      SLOW  |         4.716(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        11.294(F)|      SLOW  |         5.354(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock M_in1<3> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+M_out0<1>   |         9.941(F)|      SLOW  |         4.560(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.488(F)|      SLOW  |         4.804(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+M_out0<2>   |        10.034(F)|      SLOW  |         4.611(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.358(F)|      SLOW  |         4.767(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+M_out0<3>   |        11.988(F)|      SLOW  |         4.656(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        12.045(F)|      SLOW  |         5.013(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+M_out1<0>   |        10.214(F)|      SLOW  |         4.744(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.538(F)|      SLOW  |         4.891(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+M_out1<1>   |        10.079(F)|      SLOW  |         4.622(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.507(F)|      SLOW  |         4.334(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+M_out1<2>   |         9.557(F)|      SLOW  |         4.431(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.261(F)|      SLOW  |         4.733(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock reset to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+H_out0<0>   |        10.488(F)|      SLOW  |         5.079(F)|      FAST  |reset_H_in1[1]_AND_43_o|   0.000|
+H_out0<1>   |        10.795(F)|      SLOW  |         5.238(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.964(F)|      SLOW  |         5.352(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.282(F)|      SLOW  |         5.528(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        11.212(F)|      SLOW  |         5.482(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+            |        11.079(F)|      SLOW  |         5.420(F)|      FAST  |reset_H_in1[1]_AND_41_o|   0.000|
+H_out0<2>   |        10.543(F)|      SLOW  |         4.991(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.909(F)|      SLOW  |         5.262(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.223(F)|      SLOW  |         5.420(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        11.139(F)|      SLOW  |         5.344(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+            |        10.994(F)|      SLOW  |         5.283(F)|      FAST  |reset_H_in1[1]_AND_41_o|   0.000|
+H_out0<3>   |        11.037(F)|      SLOW  |         5.352(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        11.227(F)|      SLOW  |         5.495(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.564(F)|      SLOW  |         5.688(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        11.489(F)|      SLOW  |         5.633(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+            |        11.261(F)|      SLOW  |         5.512(F)|      FAST  |reset_H_in1[1]_AND_41_o|   0.000|
+H_out1<0>   |        10.595(F)|      SLOW  |         5.121(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.841(F)|      SLOW  |         5.268(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.374(F)|      SLOW  |         5.607(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        11.271(F)|      SLOW  |         5.508(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+            |        11.206(F)|      SLOW  |         5.470(F)|      FAST  |reset_H_in1[1]_AND_41_o|   0.000|
+H_out1<1>   |        10.384(F)|      SLOW  |         5.042(F)|      FAST  |reset_H_in1[1]_AND_33_o|   0.000|
+            |        10.413(F)|      SLOW  |         5.055(F)|      FAST  |reset_H_in1[1]_AND_35_o|   0.000|
+            |        11.176(F)|      SLOW  |         5.506(F)|      FAST  |reset_H_in1[1]_AND_37_o|   0.000|
+            |        11.099(F)|      SLOW  |         5.445(F)|      FAST  |reset_H_in1[1]_AND_39_o|   0.000|
+M_out0<0>   |         9.508(F)|      SLOW  |         4.610(F)|      FAST  |reset_M_in1[3]_AND_55_o|   0.000|
+M_out0<1>   |         9.893(F)|      SLOW  |         4.657(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.481(F)|      SLOW  |         4.881(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.569(F)|      SLOW  |         5.060(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |        10.077(F)|      SLOW  |         4.713(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+            |         9.921(F)|      SLOW  |         4.756(F)|      FAST  |reset_M_in1[3]_AND_53_o|   0.000|
+M_out0<2>   |         9.986(F)|      SLOW  |         4.708(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.351(F)|      SLOW  |         4.844(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.154(F)|      SLOW  |         4.880(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |         9.956(F)|      SLOW  |         4.722(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+            |         9.996(F)|      SLOW  |         4.806(F)|      FAST  |reset_M_in1[3]_AND_53_o|   0.000|
+M_out0<3>   |        11.940(F)|      SLOW  |         4.753(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        12.038(F)|      SLOW  |         5.090(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        12.027(F)|      SLOW  |         5.195(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |        11.550(F)|      SLOW  |         4.688(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+            |        11.689(F)|      SLOW  |         4.988(F)|      FAST  |reset_M_in1[3]_AND_53_o|   0.000|
+M_out1<0>   |        10.166(F)|      SLOW  |         4.841(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.531(F)|      SLOW  |         4.968(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.676(F)|      SLOW  |         5.163(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |        10.221(F)|      SLOW  |         4.879(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+            |        10.306(F)|      SLOW  |         5.007(F)|      FAST  |reset_M_in1[3]_AND_53_o|   0.000|
+M_out1<1>   |        10.031(F)|      SLOW  |         4.719(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |         9.500(F)|      SLOW  |         4.411(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.236(F)|      SLOW  |         4.905(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+            |        10.088(F)|      SLOW  |         4.751(F)|      FAST  |reset_M_in1[3]_AND_51_o|   0.000|
+M_out1<2>   |         9.509(F)|      SLOW  |         4.528(F)|      FAST  |reset_M_in1[3]_AND_45_o|   0.000|
+            |        10.254(F)|      SLOW  |         4.810(F)|      FAST  |reset_M_in1[3]_AND_47_o|   0.000|
+            |        10.672(F)|      SLOW  |         5.175(F)|      FAST  |reset_M_in1[3]_AND_49_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock to Setup on destination clock H_in0<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+H_in0<0>       |         |         |    0.809|    0.809|
+reset          |         |         |    2.434|    2.434|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock H_in0<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+H_in0<1>       |         |         |    2.088|    2.088|
+H_in0<2>       |         |         |    1.337|    1.337|
+H_in0<3>       |         |         |    1.344|    1.344|
+H_in1<0>       |         |         |    1.499|    1.499|
+H_in1<1>       |         |         |    1.557|    1.557|
+reset          |         |         |    1.557|    1.557|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock H_in0<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+H_in0<1>       |         |         |    1.940|    1.940|
+H_in0<2>       |         |         |    1.260|    1.260|
+H_in0<3>       |         |         |    1.196|    1.196|
+H_in1<0>       |         |         |    1.351|    1.351|
+H_in1<1>       |         |         |    1.702|    1.702|
+reset          |         |         |    1.707|    1.707|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock H_in0<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+H_in0<1>       |         |         |    1.527|    1.527|
+H_in0<2>       |         |         |    1.162|    1.162|
+H_in0<3>       |         |         |    1.106|    1.106|
+H_in1<0>       |         |         |    0.938|    0.938|
+H_in1<1>       |         |         |    1.304|    1.304|
+reset          |         |         |    1.466|    1.466|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock H_in1<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+H_in0<1>       |         |         |    1.914|    1.914|
+H_in0<2>       |         |         |    1.542|    1.542|
+H_in0<3>       |         |         |    1.544|    1.544|
+H_in1<0>       |         |         |    1.325|    1.325|
+H_in1<1>       |         |         |    2.034|    2.034|
+reset          |         |         |    2.039|    2.039|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock H_in1<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+H_in0<1>       |         |         |    1.579|    1.579|
+H_in0<2>       |         |         |    1.219|    1.219|
+H_in0<3>       |         |         |    1.221|    1.221|
+H_in1<0>       |         |         |    0.990|    0.990|
+H_in1<1>       |         |         |    1.419|    1.419|
+reset          |         |         |    1.361|    1.361|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M_in0<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M_in0<0>       |         |         |    0.887|    0.887|
+reset          |         |         |    1.779|    1.779|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M_in0<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M_in0<1>       |         |         |    1.724|    1.724|
+M_in0<2>       |         |         |    1.658|    1.658|
+M_in0<3>       |         |         |    1.435|    1.435|
+M_in1<0>       |         |         |    2.469|    2.469|
+M_in1<1>       |         |         |    1.937|    1.937|
+M_in1<2>       |         |         |    2.307|    2.307|
+M_in1<3>       |         |         |    1.527|    1.527|
+reset          |         |         |    2.106|    2.106|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M_in0<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M_in0<1>       |         |         |    1.294|    1.294|
+M_in0<2>       |         |         |    1.228|    1.228|
+M_in0<3>       |         |         |    1.005|    1.005|
+M_in1<0>       |         |         |    2.062|    2.062|
+M_in1<1>       |         |         |    1.938|    1.938|
+M_in1<2>       |         |         |    1.900|    1.900|
+M_in1<3>       |         |         |    1.528|    1.528|
+reset          |         |         |    1.676|    1.676|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M_in0<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M_in0<1>       |         |         |    1.394|    1.394|
+M_in0<2>       |         |         |    1.384|    1.384|
+M_in0<3>       |         |         |    1.069|    1.069|
+M_in1<0>       |         |         |    2.324|    2.324|
+M_in1<1>       |         |         |    2.200|    2.200|
+M_in1<2>       |         |         |    2.162|    2.162|
+M_in1<3>       |         |         |    1.790|    1.790|
+reset          |         |         |    1.781|    1.781|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M_in1<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M_in0<1>       |         |         |    1.230|    1.230|
+M_in0<2>       |         |         |    1.220|    1.220|
+M_in0<3>       |         |         |    0.905|    0.905|
+M_in1<0>       |         |         |    2.160|    2.160|
+M_in1<1>       |         |         |    1.781|    1.781|
+M_in1<2>       |         |         |    1.998|    1.998|
+M_in1<3>       |         |         |    1.371|    1.371|
+reset          |         |         |    1.362|    1.362|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M_in1<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M_in0<1>       |         |         |    1.186|    1.186|
+M_in0<2>       |         |         |    1.176|    1.176|
+M_in0<3>       |         |         |    0.861|    0.861|
+M_in1<0>       |         |         |    2.116|    2.116|
+M_in1<1>       |         |         |    1.686|    1.686|
+M_in1<2>       |         |         |    1.954|    1.954|
+M_in1<3>       |         |         |    1.276|    1.276|
+reset          |         |         |    1.267|    1.267|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M_in1<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M_in0<1>       |         |         |    1.283|    1.283|
+M_in0<2>       |         |         |    1.273|    1.273|
+M_in0<3>       |         |         |    0.958|    0.958|
+M_in1<0>       |         |         |    2.213|    2.213|
+M_in1<1>       |         |         |    1.720|    1.720|
+M_in1<2>       |         |         |    2.051|    2.051|
+M_in1<3>       |         |         |    1.310|    1.310|
+reset          |         |         |    1.270|    1.270|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M_in1<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M_in0<1>       |         |         |    1.176|    1.176|
+M_in0<2>       |         |         |    1.166|    1.166|
+M_in0<3>       |         |         |    0.851|    0.851|
+M_in1<0>       |         |         |    2.106|    2.106|
+M_in1<1>       |         |         |    1.613|    1.613|
+M_in1<2>       |         |         |    1.944|    1.944|
+M_in1<3>       |         |         |    1.203|    1.203|
+reset          |         |         |    1.163|    1.163|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    0.974|         |         |         |
+reset          |    0.022|    0.022|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+H_in0<0>       |         |         |   -0.309|   -0.309|
+H_in0<1>       |         |         |    1.305|    1.305|
+H_in0<2>       |         |         |    0.903|    0.903|
+H_in0<3>       |         |         |    0.905|    0.905|
+H_in1<0>       |         |         |    0.716|    0.716|
+H_in1<1>       |         |         |    1.108|    1.108|
+M_in0<0>       |         |         |    0.168|    0.168|
+M_in0<1>       |         |         |    1.146|    1.146|
+M_in0<2>       |         |         |    1.136|    1.136|
+M_in0<3>       |         |         |    0.821|    0.821|
+M_in1<0>       |         |         |    2.076|    2.076|
+M_in1<1>       |         |         |    1.583|    1.583|
+M_in1<2>       |         |         |    1.914|    1.914|
+M_in1<3>       |         |         |    1.173|    1.173|
+reset          |         |         |    1.151|    1.151|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Aug 01 22:05:18 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4951 MB
+
+
+

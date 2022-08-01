@@ -1,0 +1,1118 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: aclock.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "aclock.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "aclock"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : aclock
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Verilog\AlarmClock\aclock.v" into library work
+Parsing module <aclock>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <aclock>.
+WARNING:HDLCompiler:413 - "D:\Verilog\AlarmClock\aclock.v" Line 67: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\Verilog\AlarmClock\aclock.v" Line 68: Result of 9-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\Verilog\AlarmClock\aclock.v" Line 81: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\Verilog\AlarmClock\aclock.v" Line 82: Result of 9-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\Verilog\AlarmClock\aclock.v" Line 86: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\Verilog\AlarmClock\aclock.v" Line 88: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\Verilog\AlarmClock\aclock.v" Line 92: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\Verilog\AlarmClock\aclock.v" Line 115: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Verilog\AlarmClock\aclock.v" Line 141: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Verilog\AlarmClock\aclock.v" Line 50: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Verilog\AlarmClock\aclock.v" Line 143: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Verilog\AlarmClock\aclock.v" Line 145: Result of 32-bit expression is truncated to fit in 4-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <aclock>.
+    Related source file is "D:\Verilog\AlarmClock\aclock.v".
+    Found 4-bit register for signal <a_hour0>.
+    Found 4-bit register for signal <a_min1>.
+    Found 4-bit register for signal <a_min0>.
+    Found 4-bit register for signal <a_sec1>.
+    Found 4-bit register for signal <a_sec0>.
+    Found 4-bit register for signal <tmp_1s>.
+    Found 6-bit register for signal <tmp_second>.
+    Found 2-bit register for signal <a_hour1>.
+    Found 1-bit register for signal <clk_1s>.
+    Found 1-bit register for signal <Alarm>.
+    Found 1-bit register for signal <tmp_hour<5>>.
+    Found 1-bit register for signal <tmp_hour<4>>.
+    Found 1-bit register for signal <tmp_hour<3>>.
+    Found 1-bit register for signal <tmp_hour<2>>.
+    Found 1-bit register for signal <tmp_hour<1>>.
+    Found 1-bit register for signal <tmp_hour<0>>.
+    Found 1-bit register for signal <tmp_minute<5>>.
+    Found 1-bit register for signal <tmp_minute<4>>.
+    Found 1-bit register for signal <tmp_minute<3>>.
+    Found 1-bit register for signal <tmp_minute<2>>.
+    Found 1-bit register for signal <tmp_minute<1>>.
+    Found 1-bit register for signal <tmp_minute<0>>.
+    Found 6-bit adder for signal <H_in1[1]_GND_1_o_add_11_OUT> created at line 81.
+    Found 8-bit adder for signal <n0171> created at line 82.
+    Found 6-bit adder for signal <tmp_second[5]_GND_1_o_add_14_OUT> created at line 86.
+    Found 6-bit adder for signal <tmp_minute[5]_GND_1_o_add_16_OUT> created at line 88.
+    Found 6-bit adder for signal <tmp_hour[5]_GND_1_o_add_18_OUT> created at line 92.
+    Found 4-bit adder for signal <tmp_1s[3]_GND_1_o_add_38_OUT> created at line 115.
+    Found 4-bit subtractor for signal <H_out0> created at line 17.
+    Found 4-bit subtractor for signal <M_out0> created at line 21.
+    Found 4-bit subtractor for signal <S_out0> created at line 23.
+    Found 2x4-bit multiplier for signal <n0226> created at line 81.
+    Found 4x4-bit multiplier for signal <n0229> created at line 82.
+    Found 2x4-bit multiplier for signal <GND_1_o_PWR_1_o_MuLt_48_OUT> created at line 141.
+    Found 4x4-bit multiplier for signal <GND_1_o_PWR_1_o_MuLt_60_OUT> created at line 143.
+    Found 4x4-bit multiplier for signal <GND_1_o_PWR_1_o_MuLt_72_OUT> created at line 145.
+    Found 6-bit comparator lessequal for signal <n0011> created at line 87
+    Found 6-bit comparator lessequal for signal <n0014> created at line 90
+    Found 6-bit comparator lessequal for signal <n0017> created at line 93
+    Found 4-bit comparator greater for signal <tmp_1s[3]_INV_1_o> created at line 116
+    Found 4-bit comparator lessequal for signal <n0040> created at line 118
+    Found 6-bit comparator lessequal for signal <n0047> created at line 132
+    Found 6-bit comparator lessequal for signal <n0049> created at line 136
+    Found 6-bit comparator lessequal for signal <n0055> created at line 50
+    Found 6-bit comparator lessequal for signal <n0057> created at line 50
+    Found 6-bit comparator lessequal for signal <n0059> created at line 50
+    Found 6-bit comparator lessequal for signal <n0061> created at line 50
+    Found 6-bit comparator lessequal for signal <n0063> created at line 50
+    Found 6-bit comparator lessequal for signal <n0072> created at line 50
+    Found 6-bit comparator lessequal for signal <n0074> created at line 50
+    Found 6-bit comparator lessequal for signal <n0076> created at line 50
+    Found 6-bit comparator lessequal for signal <n0078> created at line 50
+    Found 6-bit comparator lessequal for signal <n0080> created at line 50
+    Found 22-bit comparator equal for signal <a_hour1[1]_c_hour1[1]_equal_81_o> created at line 163
+    Summary:
+	inferred   5 Multiplier(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred  38 D-type flip-flop(s).
+	inferred  18 Comparator(s).
+	inferred  24 Multiplexer(s).
+Unit <aclock> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 5
+ 4x2-bit multiplier                                    : 2
+ 4x4-bit multiplier                                    : 3
+# Adders/Subtractors                                   : 9
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 3
+ 6-bit adder                                           : 4
+ 8-bit adder                                           : 1
+# Registers                                            : 20
+ 1-bit register                                        : 14
+ 2-bit register                                        : 1
+ 4-bit register                                        : 4
+ 6-bit register                                        : 1
+# Comparators                                          : 18
+ 22-bit comparator equal                               : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator lessequal                            : 1
+ 6-bit comparator lessequal                            : 15
+# Multiplexers                                         : 24
+ 2-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 8
+ 4-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 13
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <aclock>.
+	Multiplier <Mmult_GND_1_o_PWR_1_o_MuLt_48_OUT> in block <aclock> and adder/subtractor <Msub_H_out0> in block <aclock> are combined into a MAC<Maddsub_GND_1_o_PWR_1_o_MuLt_48_OUT>.
+	Multiplier <Mmult_GND_1_o_PWR_1_o_MuLt_72_OUT> in block <aclock> and adder/subtractor <Msub_S_out0> in block <aclock> are combined into a MAC<Maddsub_GND_1_o_PWR_1_o_MuLt_72_OUT>.
+	Multiplier <Mmult_GND_1_o_PWR_1_o_MuLt_60_OUT> in block <aclock> and adder/subtractor <Msub_M_out0> in block <aclock> are combined into a MAC<Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT>.
+	Multiplier <Mmult_n0226> in block <aclock> and adder/subtractor <Madd_H_in1[1]_GND_1_o_add_11_OUT> in block <aclock> are combined into a MAC<Maddsub_n0226>.
+	Multiplier <Mmult_n0229> in block <aclock> and adder/subtractor <Madd_n0171_Madd> in block <aclock> are combined into a MAC<Maddsub_n0229>.
+Unit <aclock> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 5
+ 4x2-to-4-bit MAC                                      : 1
+ 4x2-to-6-bit MAC                                      : 1
+ 4x4-to-4-bit MAC                                      : 2
+ 4x4-to-6-bit MAC                                      : 1
+# Adders/Subtractors                                   : 4
+ 4-bit adder                                           : 1
+ 6-bit adder                                           : 3
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+# Comparators                                          : 18
+ 22-bit comparator equal                               : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator lessequal                            : 1
+ 6-bit comparator lessequal                            : 15
+# Multiplexers                                         : 24
+ 2-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 8
+ 4-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 13
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    tmp_hour_0 in unit <aclock>
+    tmp_minute_0 in unit <aclock>
+    tmp_minute_1 in unit <aclock>
+    tmp_minute_2 in unit <aclock>
+    tmp_minute_4 in unit <aclock>
+    tmp_minute_3 in unit <aclock>
+    tmp_hour_1 in unit <aclock>
+    tmp_hour_2 in unit <aclock>
+    tmp_hour_3 in unit <aclock>
+    tmp_hour_4 in unit <aclock>
+    tmp_minute_5 in unit <aclock>
+    tmp_hour_5 in unit <aclock>
+
+
+Optimizing unit <aclock> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block aclock, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 50
+ Flip-Flops                                            : 50
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : aclock.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 145
+#      GND                         : 1
+#      LUT1                        : 1
+#      LUT2                        : 15
+#      LUT3                        : 21
+#      LUT4                        : 15
+#      LUT5                        : 31
+#      LUT6                        : 43
+#      MUXCY                       : 10
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 5
+# FlipFlops/Latches                : 62
+#      FDC                         : 24
+#      FDCE                        : 14
+#      FDP                         : 12
+#      LDC                         : 12
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 42
+#      IBUF                        : 19
+#      OBUF                        : 23
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              62  out of  126800     0%  
+ Number of Slice LUTs:                  126  out of  63400     0%  
+    Number used as Logic:               126  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    160
+   Number with an unused Flip Flop:      98  out of    160    61%  
+   Number with an unused LUT:            34  out of    160    21%  
+   Number of fully used LUT-FF pairs:    28  out of    160    17%  
+   Number of unique control sets:        39
+
+IO Utilization: 
+ Number of IOs:                          43
+ Number of bonded IOBs:                  43  out of    210    20%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------+--------------------------+-------+
+Clock Signal                                       | Clock buffer(FF name)    | Load  |
+---------------------------------------------------+--------------------------+-------+
+clk                                                | BUFGP                    | 5     |
+clk_1s                                             | BUFG                     | 45    |
+reset_H_in1[1]_AND_33_o(reset_H_in1[1]_AND_33_o1:O)| NONE(*)(tmp_hour_5_LDC)  | 1     |
+reset_M_in1[3]_AND_45_o(reset_M_in1[3]_AND_45_o1:O)| NONE(*)(tmp_minute_5_LDC)| 1     |
+reset_H_in1[1]_AND_35_o(reset_H_in1[1]_AND_35_o1:O)| NONE(*)(tmp_hour_4_LDC)  | 1     |
+reset_H_in1[1]_AND_37_o(reset_H_in1[1]_AND_37_o1:O)| NONE(*)(tmp_hour_3_LDC)  | 1     |
+reset_H_in1[1]_AND_39_o(reset_H_in1[1]_AND_39_o1:O)| NONE(*)(tmp_hour_2_LDC)  | 1     |
+reset_H_in1[1]_AND_41_o(reset_H_in1[1]_AND_41_o1:O)| NONE(*)(tmp_hour_1_LDC)  | 1     |
+reset_M_in1[3]_AND_49_o(reset_M_in1[3]_AND_49_o1:O)| NONE(*)(tmp_minute_3_LDC)| 1     |
+reset_M_in1[3]_AND_47_o(reset_M_in1[3]_AND_47_o1:O)| NONE(*)(tmp_minute_4_LDC)| 1     |
+reset_M_in1[3]_AND_51_o(reset_M_in1[3]_AND_51_o1:O)| NONE(*)(tmp_minute_2_LDC)| 1     |
+reset_M_in1[3]_AND_53_o(reset_M_in1[3]_AND_53_o1:O)| NONE(*)(tmp_minute_1_LDC)| 1     |
+reset_M_in1[3]_AND_55_o(reset_M_in1[3]_AND_55_o1:O)| NONE(*)(tmp_minute_0_LDC)| 1     |
+reset_H_in1[1]_AND_43_o(reset_H_in1[1]_AND_43_o1:O)| NONE(*)(tmp_hour_0_LDC)  | 1     |
+---------------------------------------------------+--------------------------+-------+
+(*) These 12 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.031ns (Maximum Frequency: 329.881MHz)
+   Minimum input arrival time before clock: 3.092ns
+   Maximum output required time after clock: 3.154ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.041ns (frequency: 960.430MHz)
+  Total number of paths / destination ports: 19 / 5
+-------------------------------------------------------------------------
+Delay:               1.041ns (Levels of Logic = 1)
+  Source:            tmp_1s_3 (FF)
+  Destination:       tmp_1s_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: tmp_1s_3 to tmp_1s_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.361   0.575  tmp_1s_3 (tmp_1s_3)
+     LUT4:I0->O            1   0.097   0.000  Mmux_tmp_1s[3]_tmp_1s[3]_mux_42_OUT41 (tmp_1s[3]_tmp_1s[3]_mux_42_OUT<3>)
+     FDC:D                     0.008          tmp_1s_3
+    ----------------------------------------
+    Total                      1.041ns (0.466ns logic, 0.575ns route)
+                                       (44.8% logic, 55.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_1s'
+  Clock period: 3.031ns (frequency: 329.881MHz)
+  Total number of paths / destination ports: 1837 / 31
+-------------------------------------------------------------------------
+Delay:               3.031ns (Levels of Logic = 9)
+  Source:            tmp_minute_3_P_3 (FF)
+  Destination:       Alarm (FF)
+  Source Clock:      clk_1s rising
+  Destination Clock: clk_1s rising
+
+  Data Path: tmp_minute_3_P_3 to Alarm
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              2   0.361   0.383  tmp_minute_3_P_3 (tmp_minute_3_P_3)
+     LUT3:I1->O           10   0.097   0.725  tmp_minute_31 (tmp_minute_3)
+     LUT6:I1->O            1   0.097   0.556  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd_xor<3>11_SW0 (N20)
+     LUT6:I2->O            1   0.097   0.000  Mcompar_a_hour1[1]_c_hour1[1]_equal_81_o_lut<2> (Mcompar_a_hour1[1]_c_hour1[1]_equal_81_o_lut<2>)
+     MUXCY:S->O            1   0.353   0.000  Mcompar_a_hour1[1]_c_hour1[1]_equal_81_o_cy<2> (Mcompar_a_hour1[1]_c_hour1[1]_equal_81_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_a_hour1[1]_c_hour1[1]_equal_81_o_cy<3> (Mcompar_a_hour1[1]_c_hour1[1]_equal_81_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_a_hour1[1]_c_hour1[1]_equal_81_o_cy<4> (Mcompar_a_hour1[1]_c_hour1[1]_equal_81_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_a_hour1[1]_c_hour1[1]_equal_81_o_cy<5> (a_hour1[1]_c_hour1[1]_equal_81_o)
+     MUXCY:CI->O           1   0.023   0.000  Alarm_rstpot_cy (a_hour1[1]_c_hour1[1]_equal_81_o_l1)
+     MUXCY:CI->O           1   0.262   0.000  Alarm_rstpot_cy1 (Alarm_rstpot)
+     FDC:D                     0.008          Alarm
+    ----------------------------------------
+    Total                      3.031ns (1.367ns logic, 1.664ns route)
+                                       (45.1% logic, 54.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              0.739ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       tmp_1s_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to tmp_1s_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            50   0.001   0.389  reset_IBUF (reset_IBUF)
+     FDC:CLR                   0.349          tmp_1s_0
+    ----------------------------------------
+    Total                      0.739ns (0.350ns logic, 0.389ns route)
+                                       (47.4% logic, 52.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_1s'
+  Total number of paths / destination ports: 574 / 104
+-------------------------------------------------------------------------
+Offset:              3.092ns (Levels of Logic = 5)
+  Source:            H_in1<0> (PAD)
+  Destination:       tmp_hour_4_C_4 (FF)
+  Destination Clock: clk_1s rising
+
+  Data Path: H_in1<0> to tmp_hour_4_C_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   0.001   0.752  H_in1_0_IBUF (H_in1_0_IBUF)
+     LUT5:I0->O            3   0.097   0.566  Maddsub_n0226_Madd_cy<3>11 (Maddsub_n0226_Madd_cy<3>)
+     LUT6:I2->O            1   0.097   0.683  Mmux_tmp_hour[5]_H_in1[1]_mux_26_OUT_A111_SW3 (N34)
+     LUT6:I1->O            1   0.097   0.693  Mmux_tmp_hour[5]_H_in1[1]_mux_26_OUT_A51 (Mmux_tmp_hour[5]_H_in1[1]_mux_26_OUT_rs_lut<4>)
+     LUT6:I0->O            2   0.097   0.000  Mmux_tmp_hour[5]_H_in1[1]_mux_26_OUT_rs_xor<4>11 (tmp_hour[5]_H_in1[1]_mux_26_OUT<4>)
+     FDC:D                     0.008          tmp_hour_4_C_4
+    ----------------------------------------
+    Total                      3.092ns (0.397ns logic, 2.695ns route)
+                                       (12.8% logic, 87.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_H_in1[1]_AND_33_o'
+  Total number of paths / destination ports: 6 / 1
+-------------------------------------------------------------------------
+Offset:              1.533ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       tmp_hour_5_LDC (LATCH)
+  Destination Clock: reset_H_in1[1]_AND_33_o falling
+
+  Data Path: reset to tmp_hour_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            50   0.001   0.803  reset_IBUF (reset_IBUF)
+     LUT6:I0->O            2   0.097   0.283  reset_H_in1[1]_AND_34_o1 (reset_H_in1[1]_AND_34_o)
+     LDC:CLR                   0.349          tmp_hour_5_LDC
+    ----------------------------------------
+    Total                      1.533ns (0.447ns logic, 1.086ns route)
+                                       (29.2% logic, 70.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_M_in1[3]_AND_45_o'
+  Total number of paths / destination ports: 20 / 1
+-------------------------------------------------------------------------
+Offset:              2.530ns (Levels of Logic = 5)
+  Source:            M_in1<0> (PAD)
+  Destination:       tmp_minute_5_LDC (LATCH)
+  Destination Clock: reset_M_in1[3]_AND_45_o falling
+
+  Data Path: M_in1<0> to tmp_minute_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   0.001   0.421  M_in1_0_IBUF (M_in1_0_IBUF)
+     LUT2:I0->O            1   0.097   0.000  Maddsub_n0229_Madd1_lut<3> (Maddsub_n0229_Madd1_lut<3>)
+     XORCY:LI->O           3   0.173   0.693  Maddsub_n0229_Madd1_xor<3> (Maddsub_n0229_3)
+     LUT6:I1->O            6   0.097   0.318  Maddsub_n0229_Madd_cy<3>11 (Maddsub_n0229_Madd_cy<3>)
+     LUT4:I3->O            2   0.097   0.283  reset_M_in1[3]_AND_46_o1 (reset_M_in1[3]_AND_46_o)
+     LDC:CLR                   0.349          tmp_minute_5_LDC
+    ----------------------------------------
+    Total                      2.530ns (0.814ns logic, 1.716ns route)
+                                       (32.2% logic, 67.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_H_in1[1]_AND_35_o'
+  Total number of paths / destination ports: 6 / 1
+-------------------------------------------------------------------------
+Offset:              1.533ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       tmp_hour_4_LDC (LATCH)
+  Destination Clock: reset_H_in1[1]_AND_35_o falling
+
+  Data Path: reset to tmp_hour_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            50   0.001   0.803  reset_IBUF (reset_IBUF)
+     LUT6:I0->O            2   0.097   0.283  reset_H_in1[1]_AND_36_o1 (reset_H_in1[1]_AND_36_o)
+     LDC:CLR                   0.349          tmp_hour_4_LDC
+    ----------------------------------------
+    Total                      1.533ns (0.447ns logic, 1.086ns route)
+                                       (29.2% logic, 70.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_H_in1[1]_AND_37_o'
+  Total number of paths / destination ports: 9 / 1
+-------------------------------------------------------------------------
+Offset:              1.937ns (Levels of Logic = 3)
+  Source:            H_in0<3> (PAD)
+  Destination:       tmp_hour_3_LDC (LATCH)
+  Destination Clock: reset_H_in1[1]_AND_37_o falling
+
+  Data Path: H_in0<3> to tmp_hour_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   0.001   0.416  H_in0_3_IBUF (H_in0_3_IBUF)
+     LUT2:I0->O            3   0.097   0.693  Maddsub_n0226_Madd_lut<3>1 (Maddsub_n0226_Madd_lut<3>)
+     LUT6:I1->O            2   0.097   0.283  reset_H_in1[1]_AND_38_o1 (reset_H_in1[1]_AND_38_o)
+     LDC:CLR                   0.349          tmp_hour_3_LDC
+    ----------------------------------------
+    Total                      1.937ns (0.544ns logic, 1.393ns route)
+                                       (28.1% logic, 71.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_H_in1[1]_AND_39_o'
+  Total number of paths / destination ports: 5 / 1
+-------------------------------------------------------------------------
+Offset:              1.523ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       tmp_hour_2_LDC (LATCH)
+  Destination Clock: reset_H_in1[1]_AND_39_o falling
+
+  Data Path: reset to tmp_hour_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            50   0.001   0.793  reset_IBUF (reset_IBUF)
+     LUT5:I0->O            2   0.097   0.283  reset_H_in1[1]_AND_40_o1 (reset_H_in1[1]_AND_40_o)
+     LDC:CLR                   0.349          tmp_hour_2_LDC
+    ----------------------------------------
+    Total                      1.523ns (0.447ns logic, 1.076ns route)
+                                       (29.3% logic, 70.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_H_in1[1]_AND_41_o'
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Offset:              1.351ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       tmp_hour_1_LDC (LATCH)
+  Destination Clock: reset_H_in1[1]_AND_41_o falling
+
+  Data Path: reset to tmp_hour_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            50   0.001   0.621  reset_IBUF (reset_IBUF)
+     LUT3:I0->O            2   0.097   0.283  reset_H_in1[1]_AND_42_o1 (reset_H_in1[1]_AND_42_o)
+     LDC:CLR                   0.349          tmp_hour_1_LDC
+    ----------------------------------------
+    Total                      1.351ns (0.447ns logic, 0.904ns route)
+                                       (33.1% logic, 66.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_M_in1[3]_AND_49_o'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              2.511ns (Levels of Logic = 5)
+  Source:            M_in1<0> (PAD)
+  Destination:       tmp_minute_3_LDC (LATCH)
+  Destination Clock: reset_M_in1[3]_AND_49_o falling
+
+  Data Path: M_in1<0> to tmp_minute_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   0.001   0.421  M_in1_0_IBUF (M_in1_0_IBUF)
+     LUT2:I0->O            1   0.097   0.000  Maddsub_n0229_Madd1_lut<3> (Maddsub_n0229_Madd1_lut<3>)
+     XORCY:LI->O           3   0.173   0.305  Maddsub_n0229_Madd1_xor<3> (Maddsub_n0229_3)
+     LUT2:I1->O            2   0.097   0.688  Maddsub_n0229_Madd_lut<3>1 (Maddsub_n0229_Madd_lut<3>)
+     LUT6:I1->O            2   0.097   0.283  reset_M_in1[3]_AND_50_o1 (reset_M_in1[3]_AND_50_o)
+     LDC:CLR                   0.349          tmp_minute_3_LDC
+    ----------------------------------------
+    Total                      2.511ns (0.814ns logic, 1.697ns route)
+                                       (32.4% logic, 67.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_M_in1[3]_AND_47_o'
+  Total number of paths / destination ports: 13 / 1
+-------------------------------------------------------------------------
+Offset:              2.530ns (Levels of Logic = 5)
+  Source:            M_in1<0> (PAD)
+  Destination:       tmp_minute_4_LDC (LATCH)
+  Destination Clock: reset_M_in1[3]_AND_47_o falling
+
+  Data Path: M_in1<0> to tmp_minute_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   0.001   0.421  M_in1_0_IBUF (M_in1_0_IBUF)
+     LUT2:I0->O            1   0.097   0.000  Maddsub_n0229_Madd1_lut<3> (Maddsub_n0229_Madd1_lut<3>)
+     XORCY:LI->O           3   0.173   0.693  Maddsub_n0229_Madd1_xor<3> (Maddsub_n0229_3)
+     LUT6:I1->O            6   0.097   0.318  Maddsub_n0229_Madd_cy<3>11 (Maddsub_n0229_Madd_cy<3>)
+     LUT3:I2->O            2   0.097   0.283  reset_M_in1[3]_AND_48_o1 (reset_M_in1[3]_AND_48_o)
+     LDC:CLR                   0.349          tmp_minute_4_LDC
+    ----------------------------------------
+    Total                      2.530ns (0.814ns logic, 1.716ns route)
+                                       (32.2% logic, 67.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_M_in1[3]_AND_51_o'
+  Total number of paths / destination ports: 5 / 1
+-------------------------------------------------------------------------
+Offset:              1.523ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       tmp_minute_2_LDC (LATCH)
+  Destination Clock: reset_M_in1[3]_AND_51_o falling
+
+  Data Path: reset to tmp_minute_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            50   0.001   0.793  reset_IBUF (reset_IBUF)
+     LUT5:I0->O            2   0.097   0.283  reset_M_in1[3]_AND_52_o1 (reset_M_in1[3]_AND_52_o)
+     LDC:CLR                   0.349          tmp_minute_2_LDC
+    ----------------------------------------
+    Total                      1.523ns (0.447ns logic, 1.076ns route)
+                                       (29.3% logic, 70.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_M_in1[3]_AND_53_o'
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Offset:              1.351ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       tmp_minute_1_LDC (LATCH)
+  Destination Clock: reset_M_in1[3]_AND_53_o falling
+
+  Data Path: reset to tmp_minute_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            50   0.001   0.621  reset_IBUF (reset_IBUF)
+     LUT3:I0->O            2   0.097   0.283  reset_M_in1[3]_AND_54_o1 (reset_M_in1[3]_AND_54_o)
+     LDC:CLR                   0.349          tmp_minute_1_LDC
+    ----------------------------------------
+    Total                      1.351ns (0.447ns logic, 0.904ns route)
+                                       (33.1% logic, 66.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_M_in1[3]_AND_55_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.219ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       tmp_minute_0_LDC (LATCH)
+  Destination Clock: reset_M_in1[3]_AND_55_o falling
+
+  Data Path: reset to tmp_minute_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            50   0.001   0.489  reset_IBUF (reset_IBUF)
+     LUT2:I0->O            2   0.097   0.283  reset_M_in1[3]_AND_56_o1 (reset_M_in1[3]_AND_56_o)
+     LDC:CLR                   0.349          tmp_minute_0_LDC
+    ----------------------------------------
+    Total                      1.219ns (0.447ns logic, 0.772ns route)
+                                       (36.7% logic, 63.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_H_in1[1]_AND_43_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.219ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       tmp_hour_0_LDC (LATCH)
+  Destination Clock: reset_H_in1[1]_AND_43_o falling
+
+  Data Path: reset to tmp_hour_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            50   0.001   0.489  reset_IBUF (reset_IBUF)
+     LUT2:I0->O            2   0.097   0.283  reset_H_in1[1]_AND_44_o1 (reset_H_in1[1]_AND_44_o)
+     LDC:CLR                   0.349          tmp_hour_0_LDC
+    ----------------------------------------
+    Total                      1.219ns (0.447ns logic, 0.772ns route)
+                                       (36.7% logic, 63.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_H_in1[1]_AND_35_o'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              2.063ns (Levels of Logic = 3)
+  Source:            tmp_hour_4_LDC (LATCH)
+  Destination:       H_out0<2> (PAD)
+  Source Clock:      reset_H_in1[1]_AND_35_o falling
+
+  Data Path: tmp_hour_4_LDC to H_out0<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.472   0.525  tmp_hour_4_LDC (tmp_hour_4_LDC)
+     LUT3:I0->O            8   0.097   0.589  tmp_hour_41 (tmp_hour_4)
+     LUT5:I1->O            2   0.097   0.283  Maddsub_GND_1_o_PWR_1_o_MuLt_48_OUT_Madd_xor<2>11 (H_out0_2_OBUF)
+     OBUF:I->O                 0.000          H_out0_2_OBUF (H_out0<2>)
+    ----------------------------------------
+    Total                      2.063ns (0.666ns logic, 1.397ns route)
+                                       (32.3% logic, 67.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_1s'
+  Total number of paths / destination ports: 150 / 21
+-------------------------------------------------------------------------
+Offset:              2.911ns (Levels of Logic = 5)
+  Source:            tmp_minute_4_P_4 (FF)
+  Destination:       M_out0<3> (PAD)
+  Source Clock:      clk_1s rising
+
+  Data Path: tmp_minute_4_P_4 to M_out0<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              3   0.361   0.389  tmp_minute_4_P_4 (tmp_minute_4_P_4)
+     LUT3:I1->O            9   0.097   0.720  tmp_minute_41 (tmp_minute_4)
+     LUT5:I0->O            0   0.097   0.000  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_lut<3> (Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_lut<3>)
+     XORCY:LI->O           2   0.173   0.697  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_xor<3> (Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_3)
+     LUT6:I0->O            1   0.097   0.279  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd_xor<3>11 (M_out0_3_OBUF)
+     OBUF:I->O                 0.000          M_out0_3_OBUF (M_out0<3>)
+    ----------------------------------------
+    Total                      2.911ns (0.825ns logic, 2.086ns route)
+                                       (28.3% logic, 71.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_H_in1[1]_AND_39_o'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              2.167ns (Levels of Logic = 3)
+  Source:            tmp_hour_2_LDC (LATCH)
+  Destination:       H_out0<2> (PAD)
+  Source Clock:      reset_H_in1[1]_AND_39_o falling
+
+  Data Path: tmp_hour_2_LDC to H_out0<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tmp_hour_2_LDC (tmp_hour_2_LDC)
+     LUT3:I0->O            6   0.097   0.706  tmp_hour_21 (tmp_hour_2)
+     LUT5:I0->O            2   0.097   0.283  Maddsub_GND_1_o_PWR_1_o_MuLt_48_OUT_Madd_xor<2>11 (H_out0_2_OBUF)
+     OBUF:I->O                 0.000          H_out0_2_OBUF (H_out0<2>)
+    ----------------------------------------
+    Total                      2.167ns (0.666ns logic, 1.501ns route)
+                                       (30.7% logic, 69.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_H_in1[1]_AND_37_o'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              2.013ns (Levels of Logic = 3)
+  Source:            tmp_hour_3_LDC (LATCH)
+  Destination:       H_out1<0> (PAD)
+  Source Clock:      reset_H_in1[1]_AND_37_o falling
+
+  Data Path: tmp_hour_3_LDC to H_out1<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.472   0.515  tmp_hour_3_LDC (tmp_hour_3_LDC)
+     LUT3:I0->O            9   0.097   0.548  tmp_hour_31 (tmp_hour_3)
+     LUT5:I2->O            2   0.097   0.283  Maddsub_GND_1_o_PWR_1_o_MuLt_48_OUT_Madd_xor<1>11 (H_out0_1_OBUF)
+     OBUF:I->O                 0.000          H_out0_1_OBUF (H_out0<1>)
+    ----------------------------------------
+    Total                      2.013ns (0.666ns logic, 1.347ns route)
+                                       (33.1% logic, 66.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_H_in1[1]_AND_33_o'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              2.063ns (Levels of Logic = 3)
+  Source:            tmp_hour_5_LDC (LATCH)
+  Destination:       H_out0<1> (PAD)
+  Source Clock:      reset_H_in1[1]_AND_33_o falling
+
+  Data Path: tmp_hour_5_LDC to H_out0<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.472   0.515  tmp_hour_5_LDC (tmp_hour_5_LDC)
+     LUT3:I0->O           10   0.097   0.598  tmp_hour_51 (tmp_hour_5)
+     LUT5:I1->O            2   0.097   0.283  Maddsub_GND_1_o_PWR_1_o_MuLt_48_OUT_Madd_xor<1>11 (H_out0_1_OBUF)
+     OBUF:I->O                 0.000          H_out0_1_OBUF (H_out0<1>)
+    ----------------------------------------
+    Total                      2.063ns (0.666ns logic, 1.397ns route)
+                                       (32.3% logic, 67.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_H_in1[1]_AND_41_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              2.163ns (Levels of Logic = 3)
+  Source:            tmp_hour_1_LDC (LATCH)
+  Destination:       H_out1<0> (PAD)
+  Source Clock:      reset_H_in1[1]_AND_41_o falling
+
+  Data Path: tmp_hour_1_LDC to H_out1<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tmp_hour_1_LDC (tmp_hour_1_LDC)
+     LUT3:I0->O            5   0.097   0.702  tmp_hour_11 (tmp_hour_1)
+     LUT5:I0->O            2   0.097   0.283  Maddsub_GND_1_o_PWR_1_o_MuLt_48_OUT_Madd_xor<1>11 (H_out0_1_OBUF)
+     OBUF:I->O                 0.000          H_out0_1_OBUF (H_out0<1>)
+    ----------------------------------------
+    Total                      2.163ns (0.666ns logic, 1.497ns route)
+                                       (30.8% logic, 69.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_H_in1[1]_AND_43_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.374ns (Levels of Logic = 2)
+  Source:            tmp_hour_0_LDC (LATCH)
+  Destination:       H_out0<0> (PAD)
+  Source Clock:      reset_H_in1[1]_AND_43_o falling
+
+  Data Path: tmp_hour_0_LDC to H_out0<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tmp_hour_0_LDC (tmp_hour_0_LDC)
+     LUT3:I0->O            4   0.097   0.293  tmp_hour_01 (tmp_hour_0)
+     OBUF:I->O                 0.000          H_out0_0_OBUF (H_out0<0>)
+    ----------------------------------------
+    Total                      1.374ns (0.569ns logic, 0.805ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_M_in1[3]_AND_45_o'
+  Total number of paths / destination ports: 7 / 6
+-------------------------------------------------------------------------
+Offset:              2.761ns (Levels of Logic = 5)
+  Source:            tmp_minute_5_LDC (LATCH)
+  Destination:       M_out0<3> (PAD)
+  Source Clock:      reset_M_in1[3]_AND_45_o falling
+
+  Data Path: tmp_minute_5_LDC to M_out0<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.472   0.515  tmp_minute_5_LDC (tmp_minute_5_LDC)
+     LUT3:I0->O            9   0.097   0.332  tmp_minute_51 (tmp_minute_5)
+     LUT5:I4->O            0   0.097   0.000  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_lut<3> (Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_lut<3>)
+     XORCY:LI->O           2   0.173   0.697  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_xor<3> (Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_3)
+     LUT6:I0->O            1   0.097   0.279  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd_xor<3>11 (M_out0_3_OBUF)
+     OBUF:I->O                 0.000          M_out0_3_OBUF (M_out0<3>)
+    ----------------------------------------
+    Total                      2.761ns (0.936ns logic, 1.825ns route)
+                                       (33.9% logic, 66.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_M_in1[3]_AND_49_o'
+  Total number of paths / destination ports: 7 / 6
+-------------------------------------------------------------------------
+Offset:              3.026ns (Levels of Logic = 5)
+  Source:            tmp_minute_3_LDC (LATCH)
+  Destination:       M_out0<3> (PAD)
+  Source Clock:      reset_M_in1[3]_AND_49_o falling
+
+  Data Path: tmp_minute_3_LDC to M_out0<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.472   0.515  tmp_minute_3_LDC (tmp_minute_3_LDC)
+     LUT3:I0->O           10   0.097   0.598  tmp_minute_31 (tmp_minute_3)
+     LUT5:I1->O            0   0.097   0.000  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_lut<3> (Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_lut<3>)
+     XORCY:LI->O           2   0.173   0.697  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_xor<3> (Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_3)
+     LUT6:I0->O            1   0.097   0.279  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd_xor<3>11 (M_out0_3_OBUF)
+     OBUF:I->O                 0.000          M_out0_3_OBUF (M_out0<3>)
+    ----------------------------------------
+    Total                      3.026ns (0.936ns logic, 2.090ns route)
+                                       (30.9% logic, 69.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_M_in1[3]_AND_47_o'
+  Total number of paths / destination ports: 7 / 6
+-------------------------------------------------------------------------
+Offset:              3.154ns (Levels of Logic = 5)
+  Source:            tmp_minute_4_LDC (LATCH)
+  Destination:       M_out0<3> (PAD)
+  Source Clock:      reset_M_in1[3]_AND_47_o falling
+
+  Data Path: tmp_minute_4_LDC to M_out0<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              3   0.472   0.521  tmp_minute_4_LDC (tmp_minute_4_LDC)
+     LUT3:I0->O            9   0.097   0.720  tmp_minute_41 (tmp_minute_4)
+     LUT5:I0->O            0   0.097   0.000  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_lut<3> (Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_lut<3>)
+     XORCY:LI->O           2   0.173   0.697  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_xor<3> (Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_3)
+     LUT6:I0->O            1   0.097   0.279  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd_xor<3>11 (M_out0_3_OBUF)
+     OBUF:I->O                 0.000          M_out0_3_OBUF (M_out0<3>)
+    ----------------------------------------
+    Total                      3.154ns (0.936ns logic, 2.218ns route)
+                                       (29.7% logic, 70.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_M_in1[3]_AND_51_o'
+  Total number of paths / destination ports: 6 / 5
+-------------------------------------------------------------------------
+Offset:              2.981ns (Levels of Logic = 5)
+  Source:            tmp_minute_2_LDC (LATCH)
+  Destination:       M_out0<3> (PAD)
+  Source Clock:      reset_M_in1[3]_AND_51_o falling
+
+  Data Path: tmp_minute_2_LDC to M_out0<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.472   0.515  tmp_minute_2_LDC (tmp_minute_2_LDC)
+     LUT3:I0->O           10   0.097   0.553  tmp_minute_21 (tmp_minute_2)
+     LUT5:I2->O            0   0.097   0.000  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_lut<3> (Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_lut<3>)
+     XORCY:LI->O           2   0.173   0.697  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_xor<3> (Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_3)
+     LUT6:I0->O            1   0.097   0.279  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd_xor<3>11 (M_out0_3_OBUF)
+     OBUF:I->O                 0.000          M_out0_3_OBUF (M_out0<3>)
+    ----------------------------------------
+    Total                      2.981ns (0.936ns logic, 2.045ns route)
+                                       (31.4% logic, 68.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_M_in1[3]_AND_53_o'
+  Total number of paths / destination ports: 5 / 4
+-------------------------------------------------------------------------
+Offset:              2.854ns (Levels of Logic = 5)
+  Source:            tmp_minute_1_LDC (LATCH)
+  Destination:       M_out0<3> (PAD)
+  Source Clock:      reset_M_in1[3]_AND_53_o falling
+
+  Data Path: tmp_minute_1_LDC to M_out0<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tmp_minute_1_LDC (tmp_minute_1_LDC)
+     LUT3:I0->O           12   0.097   0.430  tmp_minute_11 (tmp_minute_1)
+     LUT5:I3->O            0   0.097   0.000  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_lut<3> (Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_lut<3>)
+     XORCY:LI->O           2   0.173   0.697  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd1_xor<3> (Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_3)
+     LUT6:I0->O            1   0.097   0.279  Maddsub_GND_1_o_PWR_1_o_MuLt_60_OUT_Madd_xor<3>11 (M_out0_3_OBUF)
+     OBUF:I->O                 0.000          M_out0_3_OBUF (M_out0<3>)
+    ----------------------------------------
+    Total                      2.854ns (0.936ns logic, 1.918ns route)
+                                       (32.8% logic, 67.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_M_in1[3]_AND_55_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.392ns (Levels of Logic = 2)
+  Source:            tmp_minute_0_LDC (LATCH)
+  Destination:       M_out0<0> (PAD)
+  Source Clock:      reset_M_in1[3]_AND_55_o falling
+
+  Data Path: tmp_minute_0_LDC to M_out0<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tmp_minute_0_LDC (tmp_minute_0_LDC)
+     LUT3:I0->O            8   0.097   0.311  tmp_minute_01 (tmp_minute_0)
+     OBUF:I->O                 0.000          M_out0_0_OBUF (M_out0<0>)
+    ----------------------------------------
+    Total                      1.392ns (0.569ns logic, 0.823ns route)
+                                       (40.9% logic, 59.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.041|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_1s
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+clk_1s                 |    3.031|         |         |         |
+reset_H_in1[1]_AND_33_o|         |    2.929|         |         |
+reset_H_in1[1]_AND_35_o|         |    2.891|         |         |
+reset_H_in1[1]_AND_37_o|         |    2.895|         |         |
+reset_H_in1[1]_AND_39_o|         |    2.970|         |         |
+reset_H_in1[1]_AND_41_o|         |    3.029|         |         |
+reset_H_in1[1]_AND_43_o|         |    2.559|         |         |
+reset_M_in1[3]_AND_45_o|         |    3.143|         |         |
+reset_M_in1[3]_AND_47_o|         |    3.236|         |         |
+reset_M_in1[3]_AND_49_o|         |    3.274|         |         |
+reset_M_in1[3]_AND_51_o|         |    3.107|         |         |
+reset_M_in1[3]_AND_53_o|         |    2.975|         |         |
+reset_M_in1[3]_AND_55_o|         |    3.049|         |         |
+-----------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.54 secs
+ 
+--> 
+
+Total memory usage is 4684384 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   13 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
